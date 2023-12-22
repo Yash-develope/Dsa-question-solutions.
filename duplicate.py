@@ -45,4 +45,19 @@ for i in range(n):
         nums.append(l)
 containdupliates(nums)
 
+#fourth solution for the question.
+def duplicate():
+    array=[]
+    n=int(input("Enter the Limit :"))
+    for i in range(n):
+        array_input=int(input(f"Enter the {i+1} Input :"))
+        array.append(array_input)
+    print(array)
+    unique_elements=set(array)
+    if len(unique_elements)==len(array):
+        print("The Array Don't contains Duplicate.")
+    else:
+        print("The Array Contains Duplicate.")
+
+
                 
